@@ -1,14 +1,41 @@
 <!DOCTYPE html>
 <html>
+<head>
+	<script type='text/javascript' src='Code/jquery-1.11.1.min.js'></script>
+<!--<style type="text/css">
+.fade {
+   opacity: 0;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+   }
+
+   .fade:hover {
+      opacity: 1;
+      }
+</style>-->
+	<script type="text/javascript">
+		
+		// $(document).ready(function(){
+		// 	$("#ciaoSource").click(function(){
+		// 		$("#ciaoDest").fadeIn(1000);
+		// 	});
+		// });
+
+	</script>
+</head>
 <body>
 <div style="align-text:center">
-<b>
-	Hello World!!! :D
-</b>
+<div id="ciaoSource" onclick='$("#ciaoDest").fadeIn(1000);'>
+
+<b style="color:red">AUGURI PU POPAAAA x6 <3</b>
+</div>
 
 <br/>
 <br/>
-<b style="text-color:red">AUGURI PU POPAAAA x6 <3</b>
 </div>
+<div id="ciaoDest" style="display:none">
+	<img src='Resources/heart.png'/>
+	</div>
 </body>
 </html>
