@@ -2,83 +2,22 @@
 <html>
 <head>
 	<script type='text/javascript' src='Code/jquery-1.11.1.min.js'></script>
-<!--<style type="text/css">
-.fade {
-   opacity: 0;
-   transition: opacity .25s ease-in-out;
-   -moz-transition: opacity .25s ease-in-out;
-   -webkit-transition: opacity .25s ease-in-out;
-   }
 
-   .fade:hover {
-      opacity: 1;
-      }
-</style>-->
-	<script type="text/javascript">
-		
-		var openDivIndex = -1;
-
-		function ShowBox(x){
-			if(openDivIndex != -1){
-				$('#gamebox'+openDivIndex).slideUp( 700, function() { 
-					if(openDivIndex != x)
-						OpenBox(x);
-					else
-						openDivIndex = -1;
-				} );
-			}
-			else{
-				OpenBox(x);
-			}
-		}
-
-		function OpenBox(x){
-			$('#gamebox'+x).slideDown(700);
-			openDivIndex=x;
-		}
-	</script>
-	<style type="text/css">
-
-		.gameHeader{
-			width:350px; 
-			height:100px;
-		}
-
-		.gameHeader div:first-child{
-			display:table-cell; 
-			vertical-align:middle; 
-			height:100px; 
-			width:60px; 
-			text-align:right; 
-			padding-right:10px;
-		}
-
-		.gameHeader div:last-child{
-			display:table-cell; 
-			vertical-align:middle; 
-			height:100%; 
-			width:250px; 
-			padding-right:30px;
-		}
-
-		.gameTitle:hover{
-			font-color: blue;
-			text-decoration: underline;
-		}
-	</style>
+	<script type="text/javascript" src="Code/functionality.js"></script>  
+	<link href="CSS/BaseCSS.css" rel="stylesheet" type="text/css">
 </head>
 
 
 
 
 <body>
-	<div style='content-align:center'>
-		<table style='width:75%; text-align: center'>
+	<div style='text-align:center'>
+		<table style='width:75%; margin-left: auto;margin-right: auto;'>
 			<tr>
 				<td style='width:33.33%'>
 					<div class="gameHeader">
 						<div>
-							<img src="Resources/SmlpIco.png" style='height:40px; vertical-align: middle'>
+							<img src="Resources/RevIco.png" style='height:50px; vertical-align: middle'>
 						</div>
 						<div>
 							<h2 class="gameTitle" onclick='ShowBox(0)'>Revolution</h2>
@@ -88,7 +27,7 @@
 				<td style='width:33.33%'>
 					<div class="gameHeader">
 						<div>
-							<img src="Resources/SmlpIco.png" style='height:40px; vertical-align: middle'>
+							<img src="Resources/SmlpIco.png" style='height:40px; vertical-align: middle; padding-right:5px'>
 						</div>
 						<div>
 							<h2 class="gameTitle" onclick='ShowBox(1)'>Survive, my little pixel!</h2>
@@ -98,7 +37,7 @@
 				<td style='width:33.33%'>
 					<div class="gameHeader">
 						<div>
-							<img src="Resources/SmlpIco.png" style='height:40px; vertical-align: middle'>
+							<img src="Resources/NlwIco.png" style='height:80px; vertical-align: middle'>
 						</div>
 						<div>
 							<h2 class="gameTitle" onclick='ShowBox(2)'>Nivram League Warriors</h2>
@@ -107,17 +46,90 @@
 				</td>
 			</tr>
 			<tr>
-				<td colspan='3'>
+				<td colspan='3' style='width:100%'>
 					<div id="gamebox0" class='gamebox' style="display:none">
-						<img src='Resources/heart.png'/>
+						<div class="dummyDiv"></div>
+						<h1>Coming soon!</h1>
 					</div>
 
 					<div id="gamebox1" class='gamebox' style="display:none">
-						<img src='Resources/heart1.png'/>
+						<div class="dummyDiv"></div>
+						<h1>Coming soon!</h1>
 					</div>
 
 					<div id="gamebox2" class='gamebox' style="display:none">
-						<img src='Resources/heart2.png'/>
+						<div class="dummyDiv"></div>
+						<h1>Coming soon!</h1>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td style='width:33.33%'>
+					<div class="gameHeader">
+						<div>
+							<img src="Resources/EcpIco.png" style='height:60px; vertical-align: middle'>
+						</div>
+						<div>
+							<h2 class="gameTitle" onclick='ShowBox(3)'>Escapalism</h2>
+						</div>
+					</div>
+				</td>
+				<td style='width:33.33%'>
+					<div class="gameHeader">
+						<div>
+							<img src="Resources/SmbIco.png" style='height:80px; vertical-align: middle'>
+						</div>
+						<div>
+							<h2 class="gameTitle" onclick='ShowBox(4)'>Super Metal Bro</h2>
+						</div>
+					</div>
+				</td>
+				<td style='width:33.33%'>
+					<div class="gameHeader">
+						<div>
+							<img src="Resources/QtmIco.png" style='height:70px; vertical-align: middle'>
+						</div>
+						<div>
+							<h2 class="gameTitle" onclick='ShowBox(5)'>Project ??</h2>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan='3' style='width:100%'>
+					<div id="gamebox3" class='gamebox' style="display:none">
+						<div class="dummyDiv"></div>
+						<h1>Coming soon!</h1>
+					</div>
+
+					<div id="gamebox4" class='gamebox' style="display:none">
+						<div class="dummyDiv"></div>
+						<h1>Coming soon!</h1>
+					</div>
+
+					<div id="gamebox5" class='gamebox' style="display:none">
+						<div class="dummyDiv"></div>
+						<h1>Coming soon!</h1>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td style='width:33.33%'>
+					<div class="gameHeader">
+						<div>
+							<img src="Resources/ThsIco.png" style='height:80px; vertical-align: middle'>
+						</div>
+						<div>
+							<h2 class="gameTitle" onclick='ShowBox(6)'>My Thesis</h2>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan='3' style='width:100%'>
+					<div id="gamebox6" class='gamebox' style="display:none">
+						<div class="dummyDiv"></div>
+						<h1>Coming soon!</h1>
 					</div>
 				</td>
 			</tr>
