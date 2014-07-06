@@ -1,0 +1,43 @@
+.gameHeader{
+	width:350px; 
+	height:100px;
+}
+
+.gameHeader div:first-child{
+	display:table-cell; 
+	vertical-align:middle; 
+	height:100px; 
+	width:60px; 
+	text-align:right; 
+	padding-right:10px;
+}
+
+.gameHeader div:last-child{
+	display:table-cell; 
+	vertical-align:middle; 
+	height:100%; 
+	width:250px; 
+	padding-right:30px;
+}
+
+.gameTitle:hover{
+	font-color: blue;
+	text-decoration: underline;
+}
+
+.gamebox{
+	width: 100%;
+	height:400px;
+
+	border: 4px solid;
+	border-radius: 50px;
+
+	overflow: scroll;
+}
+
+.dummyDiv{
+	float: left; 
+	height: 50%; 
+	width: 100%; 
+	margin-bottom: -25px;
+}
