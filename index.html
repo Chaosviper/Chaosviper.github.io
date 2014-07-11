@@ -11,6 +11,18 @@
 
 
 <body>
+	<div id='modalContainer' class='modalDialog modalNotVisible'>
+		<div class='popup'>
+			<div class='closePopup' onClick='removeImagePopup()'>X</div>
+			<div class='outerVerticalCentered'>
+				<div class='innerVerticalCentered'>
+					<img id='ImageLoadZone' src="Resources/ajaxLoading.gif" style="height:100px" />
+					<img id='ImageZone' onload="endLoadImage();" style="height:300px; display:none">
+				</div>
+			</div>			
+		</div>
+	</div>
+
 	<div style='text-align:center'>
 		<table style='width:75%; margin-left: auto;margin-right: auto;'>
 			<!--*** First Line ****-->
@@ -52,7 +64,7 @@
 						<div class='gimage'>
 							<div class='outerVerticalCentered'>
 								<div class='innerVerticalCentered'>
-									<img src='Resources/heart.png' style='height:30%' />
+									<img src='Resources/heart.png' style='height:30%' onclick='openImagePopup(1)' />
 								</div>
 							</div>
 						</div>
