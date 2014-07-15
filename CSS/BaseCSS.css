@@ -110,6 +110,19 @@
    	border-style: solid;
 }
 
+.popup .outerVerticalCentered{
+	width: 80%;
+	padding-left: 10%;
+	float: center;
+	height: 100%;
+	display: table;
+}
+
+.popup .innerVerticalCentered{
+	display: table-cell;
+	vertical-align: middle;
+}
+
 
 
 .closePopup {

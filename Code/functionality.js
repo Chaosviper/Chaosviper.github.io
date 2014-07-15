@@ -49,17 +49,16 @@ function openImagePopup(x){
 	// Popup showing
 	$("#modalContainer").removeClass("modalNotVisible");
 	// Image loading
-	$('#ImageZone').attr('src',"http://photojournal.jpl.nasa.gov/jpeg/PIA13932.jpg");
+	imgIndex=0; // Reset image index
+	var variable = getGameImageVariable(x);
+	$('#ImageZone').attr('src', variable[imgIndex]);
 }
 
 function removeImagePopup(){
 	// Popup hiding
 	$("#modalContainer").addClass("modalNotVisible");
 	// Loading image showing
-	var toHide = $('#ImageZone');
-	var toShow = $('#ImageLoadZone');
-	changeDisplayStatus(toHide, toShow);
-	toHide.removeAttr("src");
+	resetImageZone();
 }
 
 function changeDisplayStatus(toHide, toShow){
@@ -67,7 +66,90 @@ function changeDisplayStatus(toHide, toShow){
 	toHide.css("display",'none');
 }
 
+
+function resetImageZone(){
+	var toHide = $('#ImageZone');
+	var toShow = $('#ImageLoadZone');
+	changeDisplayStatus(toHide, toShow);
+	toHide.removeAttr("src");
+}
+
+
+function openVideoPopup(x){
+	// Popup showing
+	$("#modalContainerVideo").removeClass("modalNotVisible");
+	// Video src
+	$('#VideoZone').attr('src',TRAILER_YOTUBE_SRC_ESC);
+}
+
+function removeVideoPopup(){
+	// Popup hiding
+	$("#modalContainerVideo").addClass("modalNotVisible");
+	// Remove video src
+	$('#VideoZone').removeAttr("src");
+}
+
 // ******************************************************************************************************************
 // ************************************************** END ***********************************************************
 // ******************************************************************************************************************
+
+
+var imgIndex=0;
+
+function nextImg(x){
+
+	resetImageZone();
+
+	var variable= getGameImageVariable(openDivIndex);
+
+	imgIndex++;
+	if(imgIndex >= variable.length)
+		imgIndex=0;
+
+	$('#ImageZone').attr('src', variable[imgIndex]);
+}
+
+function prevImg(x){
+
+	resetImageZone();
+
+	var variable= getGameImageVariable(openDivIndex);
+
+	imgIndex--;
+	if(imgIndex < 0)
+		imgIndex= variable.length -1;
+
+	$('#ImageZone').attr('src', variable[imgIndex]);
+}
+
+function getGameImageVariable(gameIndex){
+	switch(gameIndex){
+		case 1:
+			return IMAGES_SRC_REV;
+			break;
+		case 0:
+			return IMAGES_SRC_SMLP;
+			break;
+		case 2:
+			return IMAGES_SRC_NLW;
+			break;
+		case 3:
+			return IMAGES_SRC_ECP;
+			break;
+		case 4:
+			return IMAGES_SRC_SMB;
+			break;
+		case 5:
+			return IMAGES_SRC_QTM;
+			break;
+		case 5:
+			return IMAGES_SRC_THS;
+			break;
+	}
+}
+
+
+
+
+
 
