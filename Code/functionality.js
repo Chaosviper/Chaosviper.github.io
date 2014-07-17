@@ -1,4 +1,41 @@
 
+
+// ******************************************************************************************************************
+// **************************************** KEYBORD INPUT EVENT ATTACH **********************************************
+// ******************************************************************************************************************
+
+if (/MSIE (\d+\.\d+);/.test(navigator.userAgent)) {
+    document.attachEvent('onkeydown', function(event){
+	    onArrowPressed(event.keyCode);
+    });   
+}
+else{
+	document.addEventListener('keydown', function(event) {
+	    onArrowPressed(event.keyCode);
+	});
+}
+
+function onArrowPressed(actualArrowKey){
+	// if the popup is visible
+	if( !($("#modalContainer").hasClass("modalNotVisible")) ){
+		// LEFT
+		if(actualArrowKey==37){
+			prevImg();
+		}
+		// RIGHT
+		else if(actualArrowKey==39){
+			nextImg();
+		}
+	}
+}
+
+// ******************************************************************************************************************
+// ************************************************** END ***********************************************************
+// ******************************************************************************************************************
+
+
+
+
 // ******************************************************************************************************************
 // ***************************************** FUNCTIONS FOR BOX OPENING **********************************************
 // ******************************************************************************************************************
@@ -96,7 +133,7 @@ function removeVideoPopup(){
 
 var imgIndex=0;
 
-function nextImg(x){
+function nextImg(){
 
 	resetImageZone();
 
@@ -109,7 +146,7 @@ function nextImg(x){
 	$('#ImageZone').attr('src', variable[imgIndex]);
 }
 
-function prevImg(x){
+function prevImg(){
 
 	resetImageZone();
 
