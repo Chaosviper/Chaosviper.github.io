@@ -4,9 +4,9 @@
 // ******************************************************************************************************************
 
 
-$(document).ready(function(){
+/*$(document).ready(function(){
 	$('#ImageZone').css("height", $("#ImagesContainer").css("height")); // Set the max height to the image in the popup
-})
+})*/
 
 // ******************************************************************************************************************
 // ************************************************** END ***********************************************************
@@ -102,6 +102,8 @@ function openImagePopup(x){
 	imgIndex=0; // Reset image index
 	var variable = getGameImageVariable(x);
 	$('#ImageZone').attr('src', variable[imgIndex]);
+	
+	$('#ImageZone').css("height", $("#ImagesContainer").css("height")); // Set the max height to the image in the popup
 }
 
 function removeImagePopup(){
