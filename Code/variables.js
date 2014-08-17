@@ -1,5 +1,9 @@
 // --> Escapalism <--
-var TRAILER_YOTUBE_SRC_ESC = "http://www.youtube.com/embed/voDksRCjEa4";
+var TRAILER_YOTUBE_SRC_REV = "https://www.youtube.com/embed/pT4S1AKVrUw";
+var TRAILER_YOTUBE_SRC_SMLP = "https://www.youtube.com/embed/hiq6e9yNLzE";
+var TRAILER_YOTUBE_SRC_NLW = "https://www.youtube.com/embed/5AgeMyc-_L0";
+var TRAILER_YOTUBE_SRC_ESC = "https://www.youtube.com/embed/voDksRCjEa4";
+var TRAILER_YOTUBE_SRC_SMB = "https://www.youtube.com/embed/29s20beH8uU";
 
 var IMAGES_SRC_REV = ["Resources/Rev/0.png","Resources/Rev/1.png","Resources/Rev/2.png",
 								"Resources/Rev/3.png", "Resources/Rev/4.png"];

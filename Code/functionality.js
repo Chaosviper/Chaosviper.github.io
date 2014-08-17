@@ -131,7 +131,7 @@ function openVideoPopup(x){
 	// Popup showing
 	$("#modalContainerVideo").removeClass("modalNotVisible");
 	// Video src
-	$('#VideoZone').attr('src',TRAILER_YOTUBE_SRC_ESC);
+	$('#VideoZone').attr('src', getGameVideoURLVariable(x));
 }
 
 function removeVideoPopup(){
@@ -200,6 +200,31 @@ function getGameImageVariable(gameIndex){
 	}
 }
 
+function getGameVideoURLVariable(gameIndex){
+	switch(gameIndex){
+		case 0:
+			return TRAILER_YOTUBE_SRC_REV;
+			break;
+		case 1:
+			return TRAILER_YOTUBE_SRC_SMLP;
+			break;
+		case 2:
+			return TRAILER_YOTUBE_SRC_NLW;
+			break;
+		case 3:
+			return TRAILER_YOTUBE_SRC_ESC;
+			break;
+		case 4:
+			return TRAILER_YOTUBE_SRC_SMB;
+			break;
+		case 5:
+			return "";
+			break;
+		case 5:
+			return "";
+			break;
+	}
+}
 
 
 

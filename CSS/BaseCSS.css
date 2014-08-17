@@ -168,6 +168,17 @@
 
 .previewImg:hover{
 	cursor: pointer;
-   	border-color: blue;
+   	border-color: yellow;
    	border-style: solid;
+}
+
+.TextButton{
+	font-size: 20px;
+	font-style: italic;
+}
+
+.TextButton:hover{
+	text-shadow: 0 0 5px #000;
+	color: yellow;
+   	cursor: pointer;
 }
