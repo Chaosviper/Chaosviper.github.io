@@ -162,10 +162,12 @@
 
 .previewImg{
 	height:50%;	
+   	border-color: white;
+   	border-style: solid;
 }
 
 .previewImg:hover{
 	cursor: pointer;
-   	border-color: red;
+   	border-color: blue;
    	border-style: solid;
 }
