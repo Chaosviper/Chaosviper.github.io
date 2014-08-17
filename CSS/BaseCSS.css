@@ -159,3 +159,13 @@
 #ImageZone{
 	height:65%
 }
+
+.previewImg{
+	height:50%;	
+}
+
+.previewImg:hover{
+	cursor: pointer;
+   	border-color: red;
+   	border-style: solid;
+}
