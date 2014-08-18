@@ -5,6 +5,13 @@ var TRAILER_YOTUBE_SRC_NLW = "https://www.youtube.com/embed/5AgeMyc-_L0";
 var TRAILER_YOTUBE_SRC_ESC = "https://www.youtube.com/embed/voDksRCjEa4";
 var TRAILER_YOTUBE_SRC_SMB = "https://www.youtube.com/embed/29s20beH8uU";
 
+var GAME_SRC_REV_MAC = "Games/Revolution/Revolution!_MAC.zip";
+var GAME_SRC_REV_WIN = "Games/Revolution/Revolution!_WIN.zip";
+var GAMEDESIGNDOCUMENT_SRC_NLW = "Games/NLW/GDDv1.4.pdf";
+var GAME_SRC_SMLP = "Games/SurviveMyLittlePixel/Survive, my little pixel!.html";
+var GAME_SRC_ESC = "Games/Escapalism/Escapalism.html";
+var GAME_SRC_SMB = "Games/SuperMetalBro/SuperMetalBro.html";
+
 var IMAGES_SRC_REV = ["Resources/Rev/0.png","Resources/Rev/1.png","Resources/Rev/2.png",
 								"Resources/Rev/3.png", "Resources/Rev/4.png"];
 

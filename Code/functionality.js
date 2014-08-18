@@ -141,6 +141,10 @@ function removeVideoPopup(){
 	$('#VideoZone').removeAttr("src");
 }
 
+function redirectToGameURL(x){
+	window.location = getGameURLVariable(x);  
+}
+
 // ******************************************************************************************************************
 // ************************************************** END ***********************************************************
 // ******************************************************************************************************************
@@ -227,6 +231,34 @@ function getGameVideoURLVariable(gameIndex){
 }
 
 
+function getGameURLVariable(gameIndex){
+	switch(gameIndex){
+		case -1:
+			return GAME_SRC_REV_WIN;
+			break;
+		case 0:
+			return GAME_SRC_REV_MAC;
+			break;
+		case 1:
+			return GAME_SRC_SMLP;
+			break;
+		case 2:
+			return GAMEDESIGNDOCUMENT_SRC_NLW;
+			break;
+		case 3:
+			return GAME_SRC_ESC;
+			break;
+		case 4:
+			return GAME_SRC_SMB;
+			break;
+		case 5:
+			return "";
+			break;
+		case 5:
+			return "";
+			break;
+	}
+}
 
 
 
