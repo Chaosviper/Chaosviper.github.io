@@ -252,10 +252,7 @@ function getGameURLVariable(gameIndex){
 			return GAME_SRC_SMB;
 			break;
 		case 5:
-			return "";
-			break;
-		case 5:
-			return "";
+			return GAME_SRC_ESC_MAP;
 			break;
 	}
 }

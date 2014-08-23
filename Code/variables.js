@@ -10,6 +10,7 @@ var GAME_SRC_REV_WIN = "Games/Revolution/Revolution!_WIN.zip";
 var GAMEDESIGNDOCUMENT_SRC_NLW = "Games/NLW/GDDv1.4.pdf";
 var GAME_SRC_SMLP = "Games/SurviveMyLittlePixel/Survive, my little pixel!.html";
 var GAME_SRC_ESC = "Games/Escapalism/Escapalism.html";
+var GAME_SRC_ESC_MAP = "Games/Escapalism/EscpMapGen.html";
 var GAME_SRC_SMB = "Games/SuperMetalBro/SuperMetalBro.html";
 
 var IMAGES_SRC_REV = ["Resources/Rev/0.png","Resources/Rev/1.png","Resources/Rev/2.png",
