@@ -68,6 +68,8 @@
 .innerVerticalCentered{
 	display: table-cell;
 	vertical-align: middle;
+
+	font-family: sans-serif;
 }
 
 .dummyDiv{
@@ -181,4 +183,14 @@
 	text-shadow: 0 0 5px #000;
 	color: yellow;
    	cursor: pointer;
+}
+
+#ImagesContainerHeader{
+	font-size: larger;
+	font-style: italic;
+	font-weight: bold;
+}
+
+#ImagesContainerFooter{
+	font-size: larger;
 }

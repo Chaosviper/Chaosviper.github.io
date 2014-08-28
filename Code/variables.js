@@ -31,3 +31,16 @@ var IMAGES_SRC_SMB = ["Resources/Smb/0.png","Resources/Smb/1.png","Resources/Smb
 var IMAGES_SRC_QTM = [ ];
 
 var IMAGES_SRC_THS = [ ];
+
+
+
+var HEADERS_REV = ["Main Menu", "Gameplay 1", "Gameplay 2", "Gameplay 3", "Gameplay 4" ];
+var HEADERS_SMLP = ["Gameplay 1", "Gameplay 2", "Gameplay 3", "Gameplay scene without magnifier", "Gameplay 4", "The enemies" ];
+var HEADERS_NLW = ["Gameplay on the planet (Lobby scene)", "Gameplay in the arena (Combat scene) 1", "Gameplay in the arena (Combat scene) 2", 
+						"Gameplay in the arena (Combat scene) 3", "Player class concept-art", "Co.R. (Robot) concept-art", "Storyboard (By me)"];
+var HEADERS_ECP = ["The main character (With laser weapon equipped)", "Gameplay scene (Flamethrower on the background)", "Gameplay scene (Cannon on the background)",
+						 "A map procedurally generated with my algorithm", "Another map procedurally generated with my algorithm"];
+var HEADERS_SMB = ["Game poster", "Gameplay 1: Robot in normal (green) mood", "Gameplay 2: Robot in normal (green) mood", "Gameplay 3: Robot in sad (violet) mood",
+						 "Gameplay 4: Robot in normal (green) mood", "Gameplay 4: Robot in angry (red) mood"];
+var HEADERS_QTM = [ ];
+var HEADERS_THS = [ ];

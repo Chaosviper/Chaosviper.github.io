@@ -104,6 +104,10 @@ function openImagePopup(x){
 	$('#ImageZone').attr('src', variable[imgIndex]);
 	
 	$('#ImageZone').css("height", $("#ImagesContainer").css("height")); // Set the max height to the image in the popup
+
+	// Header e Footer
+	$('#ImagesContainerFooter').text( (imgIndex+1) + '/' + variable.length);
+	$('#ImagesContainerHeader').text( getGameImageHeaders(openDivIndex)[imgIndex] );
 }
 
 function removeImagePopup(){
@@ -163,6 +167,10 @@ function nextImg(){
 		imgIndex=0;
 
 	$('#ImageZone').attr('src', variable[imgIndex]);
+
+	// Header e Footer
+	$('#ImagesContainerFooter').text( (imgIndex+1) + '/' + variable.length);
+	$('#ImagesContainerHeader').text( getGameImageHeaders(openDivIndex)[imgIndex] );
 }
 
 function prevImg(){
@@ -176,6 +184,10 @@ function prevImg(){
 		imgIndex= variable.length -1;
 
 	$('#ImageZone').attr('src', variable[imgIndex]);
+
+	// Header e Footer
+	$('#ImagesContainerFooter').text( (imgIndex+1) + '/' + variable.length);
+	$('#ImagesContainerHeader').text( getGameImageHeaders(openDivIndex)[imgIndex] );
 }
 
 function getGameImageVariable(gameIndex){
@@ -200,6 +212,32 @@ function getGameImageVariable(gameIndex){
 			break;
 		case 5:
 			return IMAGES_SRC_THS;
+			break;
+	}
+}
+
+function getGameImageHeaders(gameIndex){
+	switch(gameIndex){
+		case 0:
+			return HEADERS_REV;
+			break;
+		case 1:
+			return HEADERS_SMLP;
+			break;
+		case 2:
+			return HEADERS_NLW;
+			break;
+		case 3:
+			return HEADERS_ECP;
+			break;
+		case 4:
+			return HEADERS_SMB;
+			break;
+		case 5:
+			return HEADERS_QTM;
+			break;
+		case 5:
+			return HEADERS_THS;
 			break;
 	}
 }

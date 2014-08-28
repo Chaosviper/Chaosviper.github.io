@@ -14,9 +14,10 @@
 <body>
 	<div id='modalContainer' class='modalDialog modalNotVisible'>
 		<div class='popup'>
-			<div id="ImagesContainerHeader" class='closePopup' onClick='removeImagePopup()'>X</div>
-			<div  class='outerVerticalCentered' style="float:right; padding-left:0%; width:94%; height:10%; text-align:center">
-				<div class='innerVerticalCentered'>
+			<div class='closePopup' onClick='removeImagePopup()'>X</div>
+
+			<div class='outerVerticalCentered' style="float:right; padding-left:0%; width:94%; height:10%; text-align:center">
+				<div id='ImagesContainerHeader' class='innerVerticalCentered'>
 					<h>test</h>
 				</div>
 			</div>	
@@ -28,7 +29,7 @@
 				</div>
 			</div>	
 			<div style='float:left; width:10%; height:80%'>
-				<div class='outerVerticalCentered' style='padding-left:0%'>
+				<div class='outerVerticalCentered' style='padding-left:0%;padding-top:0%'>
 					<div class='innerVerticalCentered' onClick='prevImg()'>
 						<img src='Resources/leftArrow.png' style='width:100%'>
 					</div>
@@ -40,11 +41,11 @@
 					<img id='ImageZone' onload="endLoadImage();" style="display:none; vertical-align: middle">
 				</div>
 			</div>
-			<div id="ImagesContainerFooter" class='outerVerticalCentered' style="float:left; padding-left:0%; width:100%; height:10%; text-align:center">
-				<div class='innerVerticalCentered'>
+			<div class='outerVerticalCentered' style="float:left; padding-left:0%; width:100%; height:10%; text-align:center">
+				<div id='ImagesContainerFooter' class='innerVerticalCentered'>
 					<h>test</h>
 				</div>
-			</div>		
+			</div>	
 		</div>
 	</div>
 	<div id='modalContainerVideo' class='modalDialog modalNotVisible'>
