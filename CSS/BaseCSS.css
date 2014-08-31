@@ -72,6 +72,14 @@
 	font-family: sans-serif;
 }
 
+.innerVerticalCentered p:first-child{
+	font-style: italic;
+}
+
+.innerVerticalCentered p{
+	text-align: left;
+}
+
 .dummyDiv{
 	float: left; 
 	height: 50%; 
