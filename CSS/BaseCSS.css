@@ -37,7 +37,9 @@
 
 	border: 4px solid;
 	border-radius: 50px;
+	background: lightgray;
 
+	box-shadow: black 10px 10px 10px inset;
 	/*overflow: scroll;*/
 }
 
@@ -102,6 +104,8 @@
 	left: 0;
 	background: rgba(0,0,0,0.8);
 	z-index: 99999;
+
+    overflow: scroll;
 }
 
 .modalNotVisible {
@@ -110,14 +114,22 @@
 }
 
 .popup {
-	width: 80%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 80%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
 	margin-left: 10%;
-	height: 80%;
 	margin-top: 5%;
 	border-radius: 15px;
 	background: gray;
    	border-color: black;
    	border-style: solid;
+   	
+	min-width:1100px;
+	min-height:510px;
 }
 
 .popup .outerVerticalCentered{
@@ -201,4 +213,16 @@
 
 #ImagesContainerFooter{
 	font-size: larger;
+}
+
+#gameRoot{
+	min-height: 800px;
+	max-width: 1200px;
+	border: 4px solid;
+	border-radius: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 1070px;
+	box-shadow: 10px 10px 10px black;
+	background: white;
 }
