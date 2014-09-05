@@ -12,6 +12,7 @@ var GAME_SRC_SMLP = "Games/SurviveMyLittlePixel/Survive, my little pixel!.html";
 var GAME_SRC_ESC = "Games/Escapalism/Escapalism.html";
 var GAME_SRC_ESC_MAP = "Games/Escapalism/EscpMapGen.html";
 var GAME_SRC_SMB = "Games/SuperMetalBro/SuperMetalBro.html";
+var THESIS_SRC = "Thesis/TesiRiccardoStucchi.pdf";
 
 var IMAGES_SRC_REV = ["Resources/Rev/0.png","Resources/Rev/1.png","Resources/Rev/2.png",
 								"Resources/Rev/3.png", "Resources/Rev/4.png"];
@@ -30,7 +31,9 @@ var IMAGES_SRC_SMB = ["Resources/Smb/0.png","Resources/Smb/1.png","Resources/Smb
 
 var IMAGES_SRC_QTM = [ ];
 
-var IMAGES_SRC_THS = [ ];
+var IMAGES_SRC_THS = ["Resources/Thesis/0.png","Resources/Thesis/1.png","Resources/Thesis/2.png",
+								"Resources/Thesis/3.png", "Resources/Thesis/4.png", "Resources/Thesis/5.png", 
+								"Resources/Thesis/6.png", "Resources/Thesis/7.png"];
 
 
 
@@ -43,4 +46,11 @@ var HEADERS_ECP = ["The main character (With laser weapon equipped)", "Gameplay 
 var HEADERS_SMB = ["Game poster", "Gameplay 1: Robot in normal (green) mood", "Gameplay 2: Robot in normal (green) mood", "Gameplay 3: Robot in sad (violet) mood",
 						 "Gameplay 4: Robot in normal (green) mood", "Gameplay 4: Robot in angry (red) mood"];
 var HEADERS_QTM = [ ];
-var HEADERS_THS = [ ];
+var HEADERS_THS = ["Mean Entropy over generations. Bot1: Low skill, Sniper Rifle. Bot2: Hight skill, Chainsaw",
+					"Best map Evolution over generation (1). Bot1: Low skill, Sniper Rifle. Bot2: Hight skill, Chainsaw",
+					"Heatmap of the positions where Bot1 kills the most (Red:most number of kill, blue:lower)",
+					"Best map Evolution over generation (2). Bot1: Low skill, Sniper Rifle. Bot2: Hight skill, Chainsaw",
+					"Heatmap of the positions where Bot2 dies the most (Red:most number of death, blue:lower)",
+					"Mean Entropy over generations. Bot1: Hight skill, Sniper Rifle. Bot2: Low skill, GranateLauncher",
+					"Best map Evolution over generation. Bot1: Hight skill, Sniper Rifle. Bot2: Low skill, GranateLauncher",
+					"Heatmap of the positions where Bot1 kills the most (Red:most number of kill, blue:lower)"];

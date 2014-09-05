@@ -210,7 +210,7 @@ function getGameImageVariable(gameIndex){
 		case 5:
 			return IMAGES_SRC_QTM;
 			break;
-		case 5:
+		case 6:
 			return IMAGES_SRC_THS;
 			break;
 	}
@@ -236,7 +236,7 @@ function getGameImageHeaders(gameIndex){
 		case 5:
 			return HEADERS_QTM;
 			break;
-		case 5:
+		case 6:
 			return HEADERS_THS;
 			break;
 	}
@@ -262,7 +262,7 @@ function getGameVideoURLVariable(gameIndex){
 		case 5:
 			return "";
 			break;
-		case 5:
+		case 6:
 			return "";
 			break;
 	}
@@ -292,6 +292,9 @@ function getGameURLVariable(gameIndex){
 		case 5:
 			return GAME_SRC_ESC_MAP;
 			break;
+		case 6:
+			return THESIS_SRC;
+			break; 
 	}
 }
 
