@@ -33,7 +33,7 @@ var IMAGES_SRC_QTM = [ ];
 
 var IMAGES_SRC_THS = ["Resources/Thesis/0.png","Resources/Thesis/1.png","Resources/Thesis/2.png",
 								"Resources/Thesis/3.png", "Resources/Thesis/4.png", "Resources/Thesis/5.png", 
-								"Resources/Thesis/6.png", "Resources/Thesis/7.png"];
+								"Resources/Thesis/6.png", "Resources/Thesis/7.png", "Resources/Thesis/8.png"];
 
 
 
@@ -48,9 +48,10 @@ var HEADERS_SMB = ["Game poster", "Gameplay 1: Robot in normal (green) mood", "G
 var HEADERS_QTM = [ ];
 var HEADERS_THS = ["Mean Entropy over generations. Bot1: Low skill, Sniper Rifle. Bot2: Hight skill, Chainsaw",
 					"Best map Evolution over generation (1). Bot1: Low skill, Sniper Rifle. Bot2: Hight skill, Chainsaw",
-					"Heatmap of the positions where Bot1 kills the most (Red:most number of kill, blue:lower)",
+					"Heatmap of the positions where Bot1 kills the most (Red:most number of kills, blue:lower)",
 					"Best map Evolution over generation (2). Bot1: Low skill, Sniper Rifle. Bot2: Hight skill, Chainsaw",
-					"Heatmap of the positions where Bot2 dies the most (Red:most number of death, blue:lower)",
+					"Heatmap of the positions where Bot2 dies the most (Red:most number of deaths, blue:lower)",
+					"Heatmap of the positions where Bot1 kills the most (Red:most number of kills, blue:lower)",
 					"Mean Entropy over generations. Bot1: Hight skill, Sniper Rifle. Bot2: Low skill, GranateLauncher",
 					"Best map Evolution over generation. Bot1: Hight skill, Sniper Rifle. Bot2: Low skill, GranateLauncher",
-					"Heatmap of the positions where Bot1 kills the most (Red:most number of kill, blue:lower)"];
+					"Heatmap of the positions where Bot1 kills the most (Red:most number of kills, blue:lower)"];
