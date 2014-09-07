@@ -12,12 +12,20 @@
 	padding-right:10px;
 }
 
+@font-face{ font-family: Pixel; font-size: 50px; src: url("../PressStart2P-Regular.ttf");}
+
+
 .gameHeader div:last-child{
 	display:table-cell; 
 	vertical-align:middle; 
 	height:100%; 
 	width:250px; 
 	padding-right:30px;
+}
+
+.gameTitle{
+	font-family: Pixel;
+	font-size: 17px;
 }
 
 .gameTitle:hover{
@@ -195,7 +203,8 @@
 }
 
 .TextButton{
-	font-size: 20px;
+	font-family: Pixel;
+	font-size: 10px;
 	font-style: italic;
 }
 
