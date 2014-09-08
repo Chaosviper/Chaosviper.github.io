@@ -102,8 +102,16 @@ function openImagePopup(x){
 	imgIndex=0; // Reset image index
 	var variable = getGameImageVariable(x);
 	$('#ImageZone').attr('src', variable[imgIndex]);
-	
-	$('#ImageZone').css("height", $("#ImagesContainer").css("height")); // Set the max height to the image in the popup
+
+	var height_perc= parseInt($("#ImagesContainer").css("height"));
+	var width= parseInt($("#ImagesContainer").css("width"));
+
+	var height_calc= width*7/16;
+
+	if(window.innerWidth / window.innerHeight < 2)
+		$('#ImageZone').css("height", height_calc); // Set the max height to the image in the popup
+	else
+		$('#ImageZone').css("height", height_perc); // Set the max height to the image in the popup
 
 	// Header e Footer
 	$('#ImagesContainerFooter').text( (imgIndex+1) + '/' + variable.length);
