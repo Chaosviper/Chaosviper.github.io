@@ -36,7 +36,7 @@
 
 .selectedGameTitle{
 	text-shadow: 0 0 20px #000;
-	color: blue;
+	color: white;
 }
 
 .gamebox{
@@ -45,7 +45,7 @@
 
 	border: 4px solid;
 	border-radius: 50px;
-	background: lightgray;
+	background: #2F8FC6;
 
 	box-shadow: black 10px 10px 10px inset;
 	/*overflow: scroll;*/
@@ -132,7 +132,7 @@
 	margin-left: 10%;
 	margin-top: 5%;
 	border-radius: 15px;
-	background: gray;
+	background: #AAE0E1;
    	border-color: black;
    	border-style: solid;
    	
@@ -178,7 +178,7 @@
 	color: yellow;
 	background-color: black;
    	cursor: pointer;
-   	border-color: white;
+   	border-color: yellow;
    	border-style: solid;
 }
 
@@ -192,7 +192,7 @@
 
 .previewImg{
 	height:50%;	
-   	border-color: lightgray;
+   	border-color: #2F8FC6;
    	border-style: solid;
 }
 
@@ -233,5 +233,17 @@
 	margin-right: auto;
 	min-width: 1070px;
 	box-shadow: 10px 10px 10px black;
-	background: white;
+	background: #AAE0E1;
+}
+
+#Mail{
+	padding-left:50px; 
+	/*text-shadow: 0 0 5px #5A0059; */
+	color:white; 
+	text-decoration:inherit
+}
+
+#Mail:hover{
+	text-shadow: 0 0 5px yellow;
+	color: black; 
 }
