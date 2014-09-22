@@ -243,11 +243,15 @@
 	text-decoration:inherit
 }
 
-#Mail:hover{
+a {
+	color: white;
+}
+
+#Mail:hover, a:hover{
 	text-shadow: 0 0 5px white;
 	color: black; 
 }
 
-a {
-	color: white;
+p span {
+	font-weight: bold;
 }
