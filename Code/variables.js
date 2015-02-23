@@ -13,6 +13,7 @@ var GAME_SRC_ESC = "Games/Escapalism/Escapalism.html";
 var GAME_SRC_ESC_MAP = "Games/Escapalism/EscpMapGen.html";
 var GAME_SRC_SMB = "Games/SuperMetalBro/SuperMetalBro.html";
 var THESIS_SRC = "Thesis/TesiRiccardoStucchi.pdf";
+var PAPER_SRC = "http://kghost.de/cig_proc/full/paper_77.pdf";
 
 var IMAGES_SRC_REV = ["Resources/Rev/0.png","Resources/Rev/1.png","Resources/Rev/2.png",
 								"Resources/Rev/3.png", "Resources/Rev/4.png"];

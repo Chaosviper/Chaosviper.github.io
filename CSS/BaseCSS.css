@@ -82,6 +82,18 @@
 	font-family: sans-serif;
 }
 
+.footer{
+	display: table-cell;
+	vertical-align: bottom;
+	padding-bottom:10px;
+	width: 100%;
+	text-align: center;
+}
+
+.footer a{
+	text-decoration: none;
+}
+
 .innerVerticalCentered p:first-child{
 	font-style: italic;
 }
@@ -254,4 +266,10 @@ a {
 
 p span {
 	font-weight: bold;
+}
+
+
+.social{
+	width: 40px;
+	height: 40px;
 }

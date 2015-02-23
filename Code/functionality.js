@@ -303,6 +303,9 @@ function getGameURLVariable(gameIndex){
 		case 6:
 			return THESIS_SRC;
 			break; 
+		case 7:
+			return PAPER_SRC;
+			break; 
 	}
 }
 
