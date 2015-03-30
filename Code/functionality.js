@@ -216,7 +216,7 @@ function getGameImageVariable(gameIndex){
 			return IMAGES_SRC_SMB;
 			break;
 		case 5:
-			return IMAGES_SRC_QTM;
+			return IMAGES_SRC_OGS;
 			break;
 		case 6:
 			return IMAGES_SRC_THS;
@@ -242,7 +242,7 @@ function getGameImageHeaders(gameIndex){
 			return HEADERS_SMB;
 			break;
 		case 5:
-			return HEADERS_QTM;
+			return HEADERS_OGS;
 			break;
 		case 6:
 			return HEADERS_THS;
@@ -268,7 +268,7 @@ function getGameVideoURLVariable(gameIndex){
 			return TRAILER_YOTUBE_SRC_SMB;
 			break;
 		case 5:
-			return "";
+			return TRAILER_YOTUBE_SRC_OGS;
 			break;
 		case 6:
 			return "";
@@ -306,6 +306,9 @@ function getGameURLVariable(gameIndex){
 		case 7:
 			return PAPER_SRC;
 			break; 
+		case 8:
+			return GAME_SRC_OGS;
+			break;	
 	}
 }
 
